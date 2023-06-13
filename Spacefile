@@ -1,0 +1,14 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: Thirukuralbot
+    src: ./
+    engine: python3.9
+    primary: true
+    public: true
+    presets:
+      env:
+        - name: telegram_token
+          description: Secret message only available to this Micro
+          default: "deta is cool"
+
